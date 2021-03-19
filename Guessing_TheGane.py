@@ -12,3 +12,24 @@ def intro():
     print("***************************")
     
 #intro()
+
+#get the users name
+def getName():
+    name = input("Enter your player name: ")
+    #print(name)
+    return name
+
+#getName()
+
+#Set the random number
+def getRandom():
+    number = randrange(1,1001)
+    return number
+
+#getRandom()
+
+def getGuess():
+    guess = int(input("Enter your guess: "))
+    return guess
+
+#getGuess()
