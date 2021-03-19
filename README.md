@@ -6,3 +6,5 @@ it takes. Each wrong guess subtracts one point
 a player can play the game many times
 and the program will return the average score
 across those games.
+
+the original code https://github.com/spconger/Python-Guessing-Game
