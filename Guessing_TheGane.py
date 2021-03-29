@@ -44,3 +44,18 @@ def evaluateGuess(number, guess):
         print("Congratualations! You got it")
         state = 1
     return state
+
+#evaluateGuess(25,25)
+
+def play():
+    number = getRandom() #calling getRandom
+    score = 10 # begining score
+    for i in range (0,11):
+        guess = getGuess()
+        state = evaluateGuess(number, guess)
+        if state == 1 : #if answer was corret break loop
+            break
+        score = score - 1 #if not correct subtract one
+    return score
+
+play()
