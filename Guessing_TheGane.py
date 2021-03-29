@@ -33,3 +33,14 @@ def getGuess():
     return guess
 
 #getGuess()
+
+def evaluateGuess(number, guess):
+    state = 0
+    if guess > number:
+        print("Your guess is too large")
+    elif guess < number:
+        print("Your guess is too low")
+    else:
+        print("Congratualations! You got it")
+        state = 1
+    return state
