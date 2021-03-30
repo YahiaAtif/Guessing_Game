@@ -58,4 +58,17 @@ def play():
         score = score - 1 #if not correct subtract one
     return score
 
-play()
+#play()
+
+def game():
+    choice = 'y'
+    scores = [] #initialize the list for scores
+    while choice == 'y':
+        score = play() #call play
+        print ("Your score was", score) #print current score
+        scores.append(score)
+        choice = input("Do your want to play again? y to continue: ")
+        choice.lower()
+    return scores
+
+game()
