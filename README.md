@@ -8,3 +8,5 @@ and the program will return the average score
 across those games.
 
 the original code https://github.com/spconger/Python-Guessing-Game
+
+Finally i finished the game and i hope it's be my baby steps to master python language
