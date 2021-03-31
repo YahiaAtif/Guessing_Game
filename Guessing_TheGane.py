@@ -71,4 +71,28 @@ def game():
         choice.lower()
     return scores
 
-game()
+#game()
+
+def getAverageScore(scores):
+    total = 0
+    for item in scores:
+        total += item
+    average = total/len(scores)
+    return average
+
+#getAverageScore()
+
+def printAverage(average, name):
+    print (name, ", Your average score is", average)
+
+#printAverage()
+
+def main():
+    intro() #call intro
+    name = getName()
+    scores = game()
+    average = getAverageScore(scores)
+    printAverage(average, name)
+
+
+main()
